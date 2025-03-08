@@ -1,0 +1,24 @@
+package org.uniquindio.edu.co.poo.app;
+
+import org.uniquindio.edu.co.poo.model.Parqueadero;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        Parqueadero parqueadero = new Parqueadero("PEPE", "10123132", "calle 64 fn");
+
+        parqueadero.registrarVehiculo("NCI 61E", "chevrolet", "2017", "rojo","Carro");
+        parqueadero.registrarVehiculo("ABC 21E", "chevrolet", "2020", "azul","moto");
+        parqueadero.registrarVehiculo("ZBR 23E", "renault", "2022", "azul","carro");
+        parqueadero.registrarVehiculo("XBs 12E", "suzuki", "2024", "gris","moto");
+
+        System.out.println(parqueadero);
+
+        parqueadero.modificarVehiculo("NCI 61E", "Honda", "2015", "azul", "Carro");
+
+        parqueadero.ordenarListaVehiculos();
+
+        System.out.println(parqueadero);
+
+    }
+}
